@@ -284,36 +284,7 @@ body {
   background-color: #f6f7eb;
   height: 100%;
   color: #393e41;
-}
-
-/* Make nav diplay flex and align contents accordingly */
-nav {
-  background-color: #ffffff;
-  display: flex;
-  /* Divide the logo and the menu items to both ends   */
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 1% 2%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-}
-
-/* Remove dots for li elements in navbar
-Set li elements in same line */
-nav li {
-  list-style: none;
-  display: inline;
-  padding: 1em;
-  border: 2px solid transparent;
-}
-
-nav li:hover {
-  border: 2px solid #e94f37;
-  border-radius: 3px;
-  color: #e94f37;
+  margin-top: 96px;
 }
 
 /* App a margin top in order to fix the overlapping of navbar
@@ -329,90 +300,63 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  margin-bottom: 50px;
 }
-
-#hero-section * {
-  position: relative;
-  top: 20%;
-  left: 30%;
-}
-
-#hero-section img{
-  padding: 1em;
-  margin-bottom: 25px;
-}
-
-/* #hero-section h1 {
-  font-size: 3rem;
-} */
 
 #hero-section a {
-  text-decoration: none;
+  /* text-decoration: none; */
   font-size: 2rem;
 }
 
+#hero-section-subtitle{
+  text-align: center;
+}
+
 /* Call to Action button in the hero section */
-#call-to-action {
+ #call-to-action {
   color: #3f88c5;
   /* background-color: #3f88c5; */
-  padding: 5px;
-  border: 3px solid #3f88c5;
+  /* padding: 5px; */
+  border: 2px solid #3f88c5;
   border-radius: 5px;
-  margin-bottom: 10px;
-}
+  /* width: 100%; */
+  /* margin-bottom: 10px; */
+} 
 
-#call-to-action:hover {
+ #call-to-action:hover {
   background-color: #3f88c5;
   color: #f6f7eb;
-}
+} 
 
 /* Secondary button in the hero section */
-#secondary-call-to-action {
+ #secondary-call-to-action {
   color: #44bba4;
-  padding: 5px;
-  border: 3px solid transparent;
+  /* padding: 5px; */
+  border: 2px solid transparent;
   border-radius: 5px;
-}
+  background-color: transparent;
+  /* width: 100%; */
+} 
 
-#secondary-call-to-action:hover {
-  border: 3px solid #44bba4;
-}
+ #secondary-call-to-action:hover {
+  border: 2px solid #44bba4;
+} 
 
 .subtitle {
   font-size: 1.5rem;
   font-weight: 100;
-  display: block;
+  /* display: block; */
 }
 
-/* Why Us section */
-
-.cards-section {
-  display: flex;
-  justify-content: center;
-}
-
-.card {
-  border: 3px solid #3f88c5;
-  border-radius: 3px;
-  font-size: 0.8rem;
+.section-title{
   text-align: center;
 }
 
-.card h3 {
-  color: #f6f7eb;
-  background-color: #3f88c5;
-  font-size: 2rem;
-  text-transform: capitalize;
+.card-text{
+  font-size: 1rem;
 }
 
-.card-hover {
-  border-color: #e94f37;
+.contact-details-text{
+  text-align: center;
 }
 
 /* Contact us section */
