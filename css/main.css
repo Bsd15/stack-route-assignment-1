@@ -292,14 +292,21 @@ body {
  */
 main {
   margin-top: 85px;
-  height: 100%;
 }
 
-#hero-section {
-  background-image: url("../img/hero_background.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#hero-section{
+  background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+  /* background-image: url("../img/hero_mobile_background.svg"); */
+  /* background-size: contain; */
+}
+
+@media only screen and (min-device-width: 400px) {
+  #hero-section {
+    background-image: url("../img/hero_background.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 #hero-section a {
@@ -307,12 +314,12 @@ main {
   font-size: 2rem;
 }
 
-#hero-section-subtitle{
+#hero-section-subtitle {
   text-align: center;
 }
 
 /* Call to Action button in the hero section */
- #call-to-action {
+#call-to-action {
   color: #3f88c5;
   /* background-color: #3f88c5; */
   /* padding: 5px; */
@@ -320,26 +327,26 @@ main {
   border-radius: 5px;
   /* width: 100%; */
   /* margin-bottom: 10px; */
-} 
+}
 
- #call-to-action:hover {
+#call-to-action:hover {
   background-color: #3f88c5;
   color: #f6f7eb;
-} 
+}
 
 /* Secondary button in the hero section */
- #secondary-call-to-action {
+#secondary-call-to-action {
   color: #44bba4;
   /* padding: 5px; */
   border: 2px solid transparent;
   border-radius: 5px;
   background-color: transparent;
   /* width: 100%; */
-} 
+}
 
- #secondary-call-to-action:hover {
+#secondary-call-to-action:hover {
   border: 2px solid #44bba4;
-} 
+}
 
 .subtitle {
   font-size: 1.5rem;
@@ -347,30 +354,30 @@ main {
   /* display: block; */
 }
 
-.section-title{
+.section-title {
   text-align: center;
 }
 
-.card-text{
+.card-text {
   font-size: 1rem;
 }
 
-.contact-details-text{
+.contact-details-text {
   text-align: center;
 }
 
-#submit-query-button{
+#submit-query-button {
   background-color: #44bba4;
   color: #f6f7eb;
 }
 
-.member-card{
+.member-card {
   max-width: 15em;
 }
 
 /* Social media links */
 
-#footer-section{
+#footer-section {
   font-size: 1rem;
 }
 
@@ -392,22 +399,11 @@ main {
 }
 
 /* Footer */
-.footer {
-  display: flex;
-  justify-content: space-between;
+footer {
+  color: #f6f7eb;
+  background-color: #393e41;
+}
+
+#copyrights-section {
   font-size: 0.9rem;
-}
-
-#footer-social-links {
-  list-style: none;
-}
-
-#footer-social-links li {
-  display: inline;
-  margin-left: 0;
-  margin-right: 10px;
-}
-
-.footer-contact-links p {
-  margin-right: 10px;
 }

@@ -53,7 +53,6 @@
   </nav>
 
   <main>
-    <!-- TODO Add responsive background image -->
     <section class="jumbotron jumbotron-fluid" id="hero-section">
       <div class="container container-fluid">
         <div class="row d-flex">
@@ -402,7 +401,7 @@
       <!-- Modal for query submission -->
       <section class="d-flex justify-content-center p-3" id="submit-query">
         <!-- Button trigger modal -->
-        <button type="button" id="submit-query-button" class="btn btn-lg btn-block" data-toggle="modal"
+        <button type="button" id="submit-query-button" class="btn btn-lg btn-block col-lg-5" data-toggle="modal"
           data-target="#submitQueryModal">
           Submit a Query
         </button>
@@ -451,55 +450,95 @@
         </div>
       </section>
     </section>
+  </section>
+  <!-- Footer -->
+  <footer id="footer-section" class="container-fluid px-5 py-3">
+    <!-- Company Details Links -->
+    <!-- Display Company Logo in footer -->
+    <div class="row">
+      <div class="col mb-3">
+        <img src="/img/LOGO_1.svg" alt="LOGO" width="150" class="img-fluid">
+      </div>
+    </div>
 
-    <!-- Footer -->
-    <!-- TODO Re-arrange columns and rows -->
-    <footer id="footer-section">
-      <!-- Company Details Links -->
-      <section id="quick-links">
-        <div class="row">
-          <div class="col">
-            <img src="/img/LOGO_1.svg" alt="LOGO" width="150">
-            <p class="my-3 ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    <section id="quick-links">
+      <div class="row d-flex justify-content-between">
+        <div class="col-sm-12 col-md-4 col-lg-4">
+          <p class="mb-3 ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <p class="my-3">
+            3088 Camden Street, Reno, Nevada - 89503
+          </p>
+          <p class="my-3">
+            <i class="fas fa-phone-square-alt mr-2"></i> Telephone Number: 775-364-3797
+          </p>
+          <p>
+            <i class="fas fa-mobile-alt mr-2"></i> Mobile: 775-409-4934
+          </p>
+          <p>
+            <i class="fas fa-envelope mr-2"></i> info@technolab.com
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4">
+          <ul>
+            <li>Home</li>
+            <li>Why us</li>
+            <li>About us</li>
+            <li>FAQ's</li>
+            <li>Careers</li>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4">
+          <p class="social-link facebook">
+            <i class="fab fa-facebook-square mr-3"></i> Like our page on Facebook.
+          </p>
+          <p class="social-link twitter">
+            <i class="fab fa-twitter-square mr-3"></i> Follow us on Twitter.
+          </p>
+          <p class="social-link blogger">
+            <i class="fab fa-blogger mr-3"></i> Check out our blogs.
+          </p>
+        </div>
+    </section>
+    <hr>
+    <!-- Copyrights section -->
+    <section id="copyrights-section" class="justify-content-lg-between">
+      <div class="row">
+        <div class="col-sm-12 col-md-8 col-lg-8">
+          <p class="copyrights-section-content">
+            Copyright &COPY; All rights reserved
+          </p>
+          <p class="copyrights-section-content">
+            An ISO 9001:2019 company.
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 d-flex flex-column">
+          <!-- Social Links -->
+          <div class="d-inline-flex" id="copyrights-section-social-links">
+            <p class="facebook mr-5">
+              <i class="fab fa-facebook-square"></i>
             </p>
-            <p class="my-3">
-              3088 Camden Street, Reno, Nevada - 89503
+            <p class="twitter mr-5">
+              <i class="fab fa-twitter-square"></i>
             </p>
-            <p class="my-3">
-              <i class="fas fa-phone-square-alt"></i> Telephone Number: 775-364-3797
+            <p class="blogger">
+              <i class="fab fa-blogger"></i>
+            </p>
+          </div>
+          <!-- Contact info: Mail and phone number -->
+          <div class="d-inline-flex">
+            <p class="mr-5">
+              <i class="fas fa-envelope"></i> info@technolab.com
             </p>
             <p>
-              <i class="fas fa-mobile-alt"></i> Mobile: 775-409-4934
+              <i class="fas fa-phone-square-alt"></i> 775-364-3797
             </p>
           </div>
-          <!-- Quick Links -->
-          <div class="col">
-              <ul>
-                <li>Home</li>
-                <li>Why us</li>
-                <li>About us</li>
-                <li>FAQ's</li>
-                <li>Careers</li>
-              </ul>
-          </div>
-          <!-- Social Media links -->
-          <div class="col">
-            <p class="social-link facebook">
-                <i class="fab fa-facebook-square"></i> Like our page on Facebook.
-            </p>
-            <p class="social-link twitter">
-                <i class="fab fa-twitter-square"></i> Follow us on Twitter.
-            </p>
-            <p class="social-link blogger">
-                <i class="fab fa-blogger"></i> Check out our blogs.
-            </p>
-          </div>
-        </div>
-      </section>
-    </footer>
 
-  </section>
+        </div>
+      </div>
+    </section>
+  </footer>
 
   <!-- Javascript Includes -->
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
