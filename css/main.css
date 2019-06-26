@@ -359,47 +359,20 @@ main {
   text-align: center;
 }
 
-/* Contact us section */
-.contact-us {
-  display: flex;
-  align-items: flex-start;
-  padding: 10px;
-  margin-top: 5%;
-}
-
-#logo-contact-us{
-  margin-bottom: 5%;
-}
-
-/* subscribe Section */
-/* Add margin top and bottom */
-#subscribe-section {
-  margin-top: 5%;
-  margin-bottom: 10%;
-}
-
-#subscribe_email {
-  background: #f6f7eb;
-  border: 1px solid #ccc;
-  height: 1.3em;
-  padding: 5px;
-}
-
-#subscribe_button{
+#submit-query-button{
+  background-color: #44bba4;
   color: #f6f7eb;
-  text-transform: uppercase;
-  border-radius: 3px;
-  border: none;
-  background-color: #e94f37;
-  height: 2em;
-  cursor: pointer;
 }
 
-#subscribe_button:hover{
-  background-color: #3f88c5;
+.member-card{
+  max-width: 15em;
 }
 
 /* Social media links */
+
+#footer-section{
+  font-size: 1rem;
+}
 
 .social-link i {
   font-size: 2.5rem;
