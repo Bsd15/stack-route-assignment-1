@@ -284,36 +284,7 @@ body {
   background-color: #f6f7eb;
   height: 100%;
   color: #393e41;
-}
-
-/* Make nav diplay flex and align contents accordingly */
-nav {
-  background-color: #ffffff;
-  display: flex;
-  /* Divide the logo and the menu items to both ends   */
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 1% 2%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-}
-
-/* Remove dots for li elements in navbar
-Set li elements in same line */
-nav li {
-  list-style: none;
-  display: inline;
-  padding: 1em;
-  border: 2px solid transparent;
-}
-
-nav li:hover {
-  border: 2px solid #e94f37;
-  border-radius: 3px;
-  color: #e94f37;
+  margin-top: 96px;
 }
 
 /* App a margin top in order to fix the overlapping of navbar
@@ -321,50 +292,41 @@ nav li:hover {
  */
 main {
   margin-top: 85px;
-  height: 100%;
 }
 
-#hero-section {
-  background-image: url("../img/hero_background.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  margin-bottom: 50px;
+#hero-section{
+  background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+  /* background-image: url("../img/hero_mobile_background.svg"); */
+  /* background-size: contain; */
 }
 
-#hero-section * {
-  position: relative;
-  top: 20%;
-  left: 30%;
+@media only screen and (min-device-width: 400px) {
+  #hero-section {
+    background-image: url("../img/hero_background.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
-
-#hero-section img{
-  padding: 1em;
-  margin-bottom: 25px;
-}
-
-/* #hero-section h1 {
-  font-size: 3rem;
-} */
 
 #hero-section a {
-  text-decoration: none;
+  /* text-decoration: none; */
   font-size: 2rem;
+}
+
+#hero-section-subtitle {
+  text-align: center;
 }
 
 /* Call to Action button in the hero section */
 #call-to-action {
   color: #3f88c5;
   /* background-color: #3f88c5; */
-  padding: 5px;
-  border: 3px solid #3f88c5;
+  /* padding: 5px; */
+  border: 2px solid #3f88c5;
   border-radius: 5px;
-  margin-bottom: 10px;
+  /* width: 100%; */
+  /* margin-bottom: 10px; */
 }
 
 #call-to-action:hover {
@@ -375,87 +337,49 @@ main {
 /* Secondary button in the hero section */
 #secondary-call-to-action {
   color: #44bba4;
-  padding: 5px;
-  border: 3px solid transparent;
+  /* padding: 5px; */
+  border: 2px solid transparent;
   border-radius: 5px;
+  background-color: transparent;
+  /* width: 100%; */
 }
 
 #secondary-call-to-action:hover {
-  border: 3px solid #44bba4;
+  border: 2px solid #44bba4;
 }
 
 .subtitle {
   font-size: 1.5rem;
   font-weight: 100;
-  display: block;
+  /* display: block; */
 }
 
-/* Why Us section */
-
-.cards-section {
-  display: flex;
-  justify-content: center;
-}
-
-.card {
-  border: 3px solid #3f88c5;
-  border-radius: 3px;
-  font-size: 0.8rem;
+.section-title {
   text-align: center;
 }
 
-.card h3 {
+.card-text {
+  font-size: 1rem;
+}
+
+.contact-details-text {
+  text-align: center;
+}
+
+#submit-query-button {
+  background-color: #44bba4;
   color: #f6f7eb;
-  background-color: #3f88c5;
-  font-size: 2rem;
-  text-transform: capitalize;
 }
 
-.card-hover {
-  border-color: #e94f37;
-}
-
-/* Contact us section */
-.contact-us {
-  display: flex;
-  align-items: flex-start;
-  padding: 10px;
-  margin-top: 5%;
-}
-
-#logo-contact-us{
-  margin-bottom: 5%;
-}
-
-/* subscribe Section */
-/* Add margin top and bottom */
-#subscribe-section {
-  margin-top: 5%;
-  margin-bottom: 10%;
-}
-
-#subscribe_email {
-  background: #f6f7eb;
-  border: 1px solid #ccc;
-  height: 1.3em;
-  padding: 5px;
-}
-
-#subscribe_button{
-  color: #f6f7eb;
-  text-transform: uppercase;
-  border-radius: 3px;
-  border: none;
-  background-color: #e94f37;
-  height: 2em;
-  cursor: pointer;
-}
-
-#subscribe_button:hover{
-  background-color: #3f88c5;
+.member-card {
+  max-width: 15em;
 }
 
 /* Social media links */
+
+#footer-section {
+  font-size: 1rem;
+}
 
 .social-link i {
   font-size: 2.5rem;
@@ -475,22 +399,11 @@ main {
 }
 
 /* Footer */
-.footer {
-  display: flex;
-  justify-content: space-between;
+footer {
+  color: #f6f7eb;
+  background-color: #393e41;
+}
+
+#copyrights-section {
   font-size: 0.9rem;
-}
-
-#footer-social-links {
-  list-style: none;
-}
-
-#footer-social-links li {
-  display: inline;
-  margin-left: 0;
-  margin-right: 10px;
-}
-
-.footer-contact-links p {
-  margin-right: 10px;
 }
