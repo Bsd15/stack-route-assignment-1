@@ -1,4 +1,4 @@
-# HTML/CSS - Assignment
+# Bootstrap - Assignment
 
 Basic website for a Business organization.
 
