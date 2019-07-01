@@ -294,7 +294,7 @@ main {
   margin-top: 85px;
 }
 
-#hero-section{
+#hero-section {
   background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
   /* background-image: url("../img/hero_mobile_background.svg"); */
   /* background-size: contain; */
@@ -360,6 +360,21 @@ main {
 
 .card-text {
   font-size: 1rem;
+}
+
+/* Responsive map */
+@media only screen and (max-width: 600px) {
+  .map {
+    width: 92vw;
+    height: 40vh;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .map {
+    width: 80vw;
+    height: 50vh;
+  }
 }
 
 .contact-details-text {
