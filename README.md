@@ -2,6 +2,8 @@
 
 Basic website for a Business organization.
 
+[View website](https://bsd15.github.io/stack-route-assignment-1/. )
+
 ## Element Usage
 
 - [x] Fixed Header/Navigation Bar , Drop-down menu
