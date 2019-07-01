@@ -3,12 +3,8 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
-    TODO Add Entry
-
-# THANKS
-
-    <name>
+    <name> -- <role>
+    B Siva Datta -- Developer 
 
 # TECHNOLOGY COLOPHON
 
